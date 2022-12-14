@@ -6,6 +6,7 @@ Lai projektu startētu varam atvērt termināli un aiziet līdz Frontend.UI mape
 ![image](https://user-images.githubusercontent.com/99561972/207614492-c3bb810c-9294-44f2-b533-b7070c1007dd.png)
 
 Lai palaistu C# projektu vēlams aiziet līdz PersonAPI pirmajai mapei un palaist PersonAPI.sln failu, kas jums atvērs jūsu Visual Studio. 
+
 ![image](https://user-images.githubusercontent.com/99561972/207612734-9479ab9b-ec9b-44af-b93d-8ee1fe4dc4e9.png)
 Šeti mēs varam palaist vēlamos mājasdarbus PersonAPI vai ArrayTask(pirmais uzdevums)
 
