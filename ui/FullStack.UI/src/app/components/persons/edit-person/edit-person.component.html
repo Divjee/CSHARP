@@ -1,0 +1,54 @@
+<div class="container" my-5>
+    <h1 class="mb-3">Edit Person</h1>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updatePerson()">
+                <div class="mb-3">
+                    <label for="id" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="id" readonly
+                    name="id"  [(ngModel)]= "personDetails.id">
+                  </div>
+                <div class="mb-3">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstName" 
+                      name="firstName"  [(ngModel)]= "personDetails.firstName">
+                    </div>
+                <div class="mb-3">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName"
+                      name="lastName" [(ngModel)]="personDetails.lastName">
+                </div>
+                <div class="mb-3">
+                    <label for="personalCode" class="form-label">Personal Code</label>
+                    <input type="text" class="form-control" id="personalCode"
+                    name="personalCode" [(ngModel)]="personDetails.personalCode">
+                </div>
+                <div class="mb-3">
+                    <label for="dateOfBirth" class="form-label">Date Of Birth</label>
+                    <input type="text" class="form-control" id="dateOfBirth"
+                    name="dateOfBirth" [(ngModel)]="personDetails.dateOfBirth">
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber"
+                    name="phoneNumber" [(ngModel)]="personDetails.phoneNumber">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email"
+                    name="email" [(ngModel)]="personDetails.email">
+                </div>
+                <div class="mb-3">
+                    <label for="apartmentId" class="form-label">Apartment Id</label>
+                    <input type="number" class="form-control" id="apartmentId"
+                    name="apartmentId" [(ngModel)]="personDetails.apartmentId">
+                </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-danger"(click)="deletePerson(personDetails.id)">Delete</button>
+            </form>
+        </div>
+    </div>
+
+    
+</div>
+

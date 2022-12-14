@@ -1,0 +1,47 @@
+<div class="container" my-5>
+    <h1 class="mb-3">Add New Apartment</h1>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="addApartment()">
+                <div class="mb-3">
+                      <label for="apartmentNumber" class="form-label">Apartment number</label>
+                      <input type="number" class="form-control" id="apartmentNumber" 
+                      name="apartmentNumber"  [(ngModel)]= "addApartmentRequest.apartmentNumber">
+                    </div>
+                <div class="mb-3">
+                      <label for="floor" class="form-label">Floor</label>
+                      <input type="number" class="form-control" id="floor"
+                      name="floor" [(ngModel)]="addApartmentRequest.floor">
+                </div>
+                <div class="mb-3">
+                    <label for="numberOfRooms" class="form-label">Nr. of romms</label>
+                    <input type="number" class="form-control" id="numberOfRooms"
+                    name="numberOfRooms" [(ngModel)]="addApartmentRequest.numberOfRooms">
+                </div>
+                <div class="mb-3">
+                    <label for="nrOfInhabitants" class="form-label">Nr. of inhabitants</label>
+                    <input type="number" class="form-control" id="nrOfInhabitants"
+                    name="nrOfInhabitants" [(ngModel)]="addApartmentRequest.nrOfInhabitants">
+                </div>
+                <div class="mb-3">
+                    <label for="fullSqrMeters" class="form-label">Full square meters</label>
+                    <input type="number" class="form-control" id="fullSqrMeters"
+                    name="fullSqrMeters" [(ngModel)]="addApartmentRequest.fullSqrMeters">
+                </div>
+                <div class="mb-3">
+                    <label for="livingAreaSqrMeters" class="form-label">Living area square meters</label>
+                    <input type="number" class="form-control" id="livingAreaSqrMeters"
+                    name="livingAreaSqrMeters" [(ngModel)]="addApartmentRequest.livingAreaSqrMeters">
+                </div>
+                <div class="mb-3">
+                    <label for="buildingId" class="form-label">Building ID</label>
+                    <input type="number" class="form-control" id="buildingId"
+                    name="buildingId" [(ngModel)]="addApartmentRequest.buildingId">
+                </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+
+    
+</div>

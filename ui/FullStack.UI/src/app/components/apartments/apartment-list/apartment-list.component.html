@@ -1,0 +1,36 @@
+<div class="container" my-5>
+    <h1 class="mb-3">Apartments</h1>
+
+    <table class="table" *ngIf="apartments.length > 0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Apartment Number</th>
+                <th>Floor</th>
+                <th>Number Of Rooms</th>
+                <th>Inhabitants</th>
+                <th>FullSqrMeters</th>
+                <th>LivingArea SqrMeters</th>
+                <th>Building Id</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Apartment of apartments">
+                <td>{{Apartment.id}}</td>
+                <td>{{Apartment.apartmentNumber}}</td>
+                <td>{{Apartment.floor}}</td>
+                <td>{{Apartment.numberOfRooms}}</td>
+                <td>{{Apartment.nrOfInhabitants}}</td>
+                <td>{{Apartment.fullSqrMeters}}</td>
+                <td>{{Apartment.livingAreaSqrMeters}}</td>
+                <td>{{Apartment.buildingId}}</td>
+                <td><a [routerLink]="['/apartments','edit', Apartment.id]">Edit/Delete</a></td>
+                <td><a routerLink="add">Add New Apartment</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="apartments.length < 1">No apartments found</p>
+    <td *ngIf="apartments.length < 1"><a routerLink="add">Add New Apartment</a></td>
+</div>

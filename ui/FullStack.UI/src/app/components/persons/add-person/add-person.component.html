@@ -1,0 +1,47 @@
+<div class="container" my-5>
+    <h1 class="mb-3">Add New Person</h1>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="addPerson()">
+                <div class="mb-3">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstName" 
+                      name="firstName"  [(ngModel)]= "addPersonRequest.firstName">
+                    </div>
+                <div class="mb-3">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName"
+                      name="lastName" [(ngModel)]="addPersonRequest.lastName">
+                </div>
+                <div class="mb-3">
+                    <label for="personalCode" class="form-label">Personal Code</label>
+                    <input type="text" class="form-control" id="personalCode"
+                    name="personalCode" [(ngModel)]="addPersonRequest.personalCode">
+                </div>
+                <div class="mb-3">
+                    <label for="dateOfBirth" class="form-label">Date Of Birth</label>
+                    <input type="text" class="form-control" id="dateOfBirth"
+                    name="dateOfBirth" [(ngModel)]="addPersonRequest.dateOfBirth">
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber"
+                    name="phoneNumber" [(ngModel)]="addPersonRequest.phoneNumber">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email"
+                    name="email" [(ngModel)]="addPersonRequest.email">
+                </div>
+                <div class="mb-3">
+                    <label for="apartmentId" class="form-label">Apartment Id</label>
+                    <input type="number" class="form-control" id="apartmentId"
+                    name="apartmentId" [(ngModel)]="addPersonRequest.apartmentId">
+                </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+
+    
+</div>

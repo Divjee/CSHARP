@@ -1,0 +1,8 @@
+C:\Users\Salix\source\repos\PersonAPI\ArrayTask\bin\Debug\ArrayTask.exe.config
+C:\Users\Salix\source\repos\PersonAPI\ArrayTask\bin\Debug\ArrayTask.exe
+C:\Users\Salix\source\repos\PersonAPI\ArrayTask\bin\Debug\ArrayTask.pdb
+C:\Users\Salix\source\repos\PersonAPI\ArrayTask\obj\Debug\ArrayTask.csproj.AssemblyReference.cache
+C:\Users\Salix\source\repos\PersonAPI\ArrayTask\obj\Debug\ArrayTask.csproj.SuggestedBindingRedirects.cache
+C:\Users\Salix\source\repos\PersonAPI\ArrayTask\obj\Debug\ArrayTask.csproj.CoreCompileInputs.cache
+C:\Users\Salix\source\repos\PersonAPI\ArrayTask\obj\Debug\ArrayTask.exe
+C:\Users\Salix\source\repos\PersonAPI\ArrayTask\obj\Debug\ArrayTask.pdb

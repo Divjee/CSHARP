@@ -1,0 +1,32 @@
+<div class="container" my-5>
+    <h1 class="mb-3">Buildings</h1>
+
+    <table class="table" *ngIf="buildings.length > 0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>HouseNumber</th>
+                <th>StreetName</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>PostalCode</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Building of buildings">
+                <td>{{Building.id}}</td>
+                <td>{{Building.houseNumber}}</td>
+                <td>{{Building.streetName}}</td>
+                <td>{{Building.city}}</td>
+                <td>{{Building.country}}</td>
+                <td>{{Building.postalCode}}</td>
+                <td><a [routerLink]="['/buildings','edit', Building.id]">Edit/Delete</a></td>
+                <td><a routerLink="add">Add New Building</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="buildings.length < 1">No buldings found</p>
+    <td *ngIf="buildings.length < 1"><a routerLink="add">Add New Building</a></td>
+</div>
